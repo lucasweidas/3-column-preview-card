@@ -16,6 +16,7 @@
     --clr-very-dark-cyan: hsl(179, 100%, 13%);
     --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
     --clr-very-light-gray: hsl(0, 0%, 95%);
+    --clr-accessibility: hsl(0, 4%, 10%);
 
     /* Fonts */
     --font-title-700: 'Big Shoulders Display', cursive;
@@ -37,6 +38,23 @@ body {
     font-family: var(--font-text-400);
     font-size: 1rem;
 }
+
+/*****************************************/
+/* Accessibility */
+
+/* .cards-container .card-sedans > * {
+    color: var(--clr-accessibility);
+}
+
+.card-sedans .card__btn:hover,
+.card-sedans .card__btn:focus-within {
+    color: var(--clr-accessibility);
+}
+
+.card-suvs .card__description,
+.card-luxury .card__description {
+    color: var(--clr-very-light-gray);
+} */
 
 /*****************************************/
 /* Cards Container */
@@ -104,7 +122,7 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-/* Border radius adjust for display between 600px and 899px */
+/* Cards border-radius adjust for display between 600px and 899px */
 @media (min-width: 600px) {
     .card-sedans {
         border-radius: 10px 0 0 10px;
@@ -115,7 +133,7 @@ body {
     }
 }
 
-/* Border radius adjust for display above 900px */
+/* Cards border-radius adjust for display above 900px */
 @media (min-width: 900px) {
     .card-sedans {
         border-radius: 10px 0 0 10px;
