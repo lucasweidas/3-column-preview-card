@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****************************************/
+/* Variables */
+
+:root {
+    /* Colors */
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+
+    /* Fonts */
+    --font-title-700: 'Big Shoulders Display', cursive;
+    --font-text-400: 'Lexend Deca', sans-serif;
+}
+
+/*****************************************/
+/* General Styles */
+
+body {
+    background-color: var(--clr-very-light-gray);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: var(--font-text-400);
+    font-size: 1rem;
+}
+
+/*****************************************/
+/* Cards Container */
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card {
+    padding: 2.5rem;
+    max-width: 300px;
+}
+
+/* Sedans Card */
+.card-sedans {
+    background-color: var(--clr-orange);
+    border-radius: 10px 10px 0 0;
+    color: var(--clr-orange);
+}
+
+.card__title {
+    font-family: var(--font-title-700);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--clr-very-light-gray);
+    margin-block: 1.5rem;
+}
+
+.card__description {
+    color: var(--clr-transparent-white);
+    line-height: 1.5rem;
+}
+
+.card__btn {
+    cursor: pointer;
+    background-color: var(--clr-very-light-gray);
+    border: 2px solid var(--clr-very-light-gray);
+    border-radius: 30px;
+    font-family: var(--font-text-400);
+    color: inherit;
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+    transition-duration: 0.3s;
+}
+
+.card__btn:hover,
+.card__btn:focus-within {
+    background-color: transparent;
+    color: var(--clr-very-light-gray);
+}
+
+/* Suvs Card */
+.card-suvs {
+    background-color: var(--clr-dark-cyan);
+    color: var(--clr-dark-cyan);
+}
+
+/* Luxury Card */
+.card-luxury {
+    background-color: var(--clr-very-dark-cyan);
+    color: var(--clr-very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 600px) {
+    .card-sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-suvs {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .card-sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-suvs {
+        border-radius: 0;
+    }
+
+    .card-luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+/*****************************************/
+/* Footer */
+
+.attribution {
+    color: var(--clr-very-dark-cyan);
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--clr-dark-cyan);
+}
+
+@media (hover) {
+    .attribution a:hover,
+    .attribution a:focus-within {
+        text-decoration: underline;
+    }
+}
