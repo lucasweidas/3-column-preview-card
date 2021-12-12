@@ -161,9 +161,7 @@ body {
     color: var(--clr-dark-cyan);
 }
 
-@media (hover) {
-    .attribution a:hover,
-    .attribution a:focus-within {
-        text-decoration: underline;
-    }
+.attribution a:hover,
+.attribution a:focus-within {
+    text-decoration: underline;
 }
