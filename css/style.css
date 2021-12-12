@@ -104,6 +104,7 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
+/* Border radius adjust for display between 600px and 899px */
 @media (min-width: 600px) {
     .card-sedans {
         border-radius: 10px 0 0 10px;
@@ -114,6 +115,7 @@ body {
     }
 }
 
+/* Border radius adjust for display above 900px */
 @media (min-width: 900px) {
     .card-sedans {
         border-radius: 10px 0 0 10px;
