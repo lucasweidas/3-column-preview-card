@@ -36,6 +36,7 @@ body {
     align-items: center;
     gap: 2rem;
     font-family: var(--font-text-400);
+    padding-block: 2rem;
 }
 
 /*****************************************/
@@ -148,6 +149,8 @@ body {
 .attribution {
     color: var(--clr-very-dark-cyan);
     text-align: center;
+    line-height: 1.6em;
+    padding-inline: 1em;
 }
 
 .attribution a {
